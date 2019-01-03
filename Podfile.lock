@@ -1,3 +1,33 @@
-PODFILE CHECKSUM: a946eff06c345dc0a3d03df307154a5542960be9
+PODS:
+  - Alamofire (4.8.0)
+  - KeychainSwift (12.0.0)
+  - PPSDK-Swift (0.2.3):
+    - Alamofire (~> 4.7)
+    - KeychainSwift (~> 12.0)
+
+DEPENDENCIES:
+  - PPSDK-Swift (from `https://github.com/playportal-studio/PPSDK-Swift`, tag `0.2.3`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - KeychainSwift
+
+EXTERNAL SOURCES:
+  PPSDK-Swift:
+    :git: https://github.com/playportal-studio/PPSDK-Swift
+    :tag: 0.2.3
+
+CHECKOUT OPTIONS:
+  PPSDK-Swift:
+    :git: https://github.com/playportal-studio/PPSDK-Swift
+    :tag: 0.2.3
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  KeychainSwift: d5e776578587ee5958ce36601df22f168f65138a
+  PPSDK-Swift: c2e46229dd6f53cdf2c883a9050f478cf062017c
+
+PODFILE CHECKSUM: 30bed6a902d0fadf2265c003bb232a9a813dd74b
 
 COCOAPODS: 1.6.0.beta.1
