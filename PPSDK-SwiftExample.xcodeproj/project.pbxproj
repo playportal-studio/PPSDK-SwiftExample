@@ -12,6 +12,8 @@
 		1C41D16321DE3ECF004C2254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C41D16221DE3ECF004C2254 /* Assets.xcassets */; };
 		1C41D16621DE3ECF004C2254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C41D16421DE3ECF004C2254 /* LaunchScreen.storyboard */; };
 		1C41D16E21DE4091004C2254 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C41D16D21DE4091004C2254 /* Config.swift */; };
+		1C41D17021DE681D004C2254 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C41D16F21DE681D004C2254 /* ProfileViewController.swift */; };
+		1C41D17221DE6827004C2254 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C41D17121DE6827004C2254 /* LoginViewController.swift */; };
 		D428223467980BBDF7875687 /* Pods_PlayPortalSDK_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237DA17C5F469E7276045D69 /* Pods_PlayPortalSDK_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		1C41D16521DE3ECF004C2254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C41D16721DE3ECF004C2254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C41D16D21DE4091004C2254 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		1C41D16F21DE681D004C2254 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1C41D17121DE6827004C2254 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		237DA17C5F469E7276045D69 /* Pods_PlayPortalSDK_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayPortalSDK_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C70F67EF873DC54772C467 /* Pods-PlayPortalSDK-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayPortalSDK-Swift.release.xcconfig"; path = "Target Support Files/Pods-PlayPortalSDK-Swift/Pods-PlayPortalSDK-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		8CC986EC01E0194887BFD6C4 /* Pods-PlayPortalSDK-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayPortalSDK-Swift.debug.xcconfig"; path = "Target Support Files/Pods-PlayPortalSDK-Swift/Pods-PlayPortalSDK-Swift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 				1C41D16421DE3ECF004C2254 /* LaunchScreen.storyboard */,
 				1C41D16721DE3ECF004C2254 /* Info.plist */,
 				1C41D16D21DE4091004C2254 /* Config.swift */,
+				1C41D16F21DE681D004C2254 /* ProfileViewController.swift */,
+				1C41D17121DE6827004C2254 /* LoginViewController.swift */,
 			);
 			path = "PlayPortalSDK-Swift";
 			sourceTree = "<group>";
@@ -125,7 +131,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1C41D15321DE3ECD004C2254 /* Build configuration list for PBXProject "PlayPortalSDK-Swift" */;
+			buildConfigurationList = 1C41D15321DE3ECD004C2254 /* Build configuration list for PBXProject "PPSDK-SwiftExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,6 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C41D17221DE6827004C2254 /* LoginViewController.swift in Sources */,
+				1C41D17021DE681D004C2254 /* ProfileViewController.swift in Sources */,
 				1C41D15C21DE3ECD004C2254 /* AppDelegate.swift in Sources */,
 				1C41D16E21DE4091004C2254 /* Config.swift in Sources */,
 			);
@@ -396,7 +404,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1C41D15321DE3ECD004C2254 /* Build configuration list for PBXProject "PlayPortalSDK-Swift" */ = {
+		1C41D15321DE3ECD004C2254 /* Build configuration list for PBXProject "PPSDK-SwiftExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1C41D16821DE3ECF004C2254 /* Debug */,
