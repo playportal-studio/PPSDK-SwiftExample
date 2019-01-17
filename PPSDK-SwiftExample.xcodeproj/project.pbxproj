@@ -14,11 +14,14 @@
 		1C41D16E21DE4091004C2254 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C41D16D21DE4091004C2254 /* Config.swift */; };
 		1C41D17021DE681D004C2254 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C41D16F21DE681D004C2254 /* ProfileViewController.swift */; };
 		1C41D17221DE6827004C2254 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C41D17121DE6827004C2254 /* LoginViewController.swift */; };
-		D428223467980BBDF7875687 /* Pods_PlayPortalSDK_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237DA17C5F469E7276045D69 /* Pods_PlayPortalSDK_Swift.framework */; };
+		1CB9A30421F0D5C8001F1AF3 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9A30321F0D5C8001F1AF3 /* FriendViewController.swift */; };
+		1CBFA8A521F0D88E00295869 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBFA8A421F0D88E00295869 /* FriendTableViewCell.swift */; };
+		1CBFA8A821F0E46600295869 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBFA8A721F0E46600295869 /* DataViewController.swift */; };
+		9AEF9027ACB6542A77B81F13 /* Pods_PPSDK_SwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11905D8C32D292C2D132044 /* Pods_PPSDK_SwiftExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C41D15821DE3ECD004C2254 /* PlayPortalSDK-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlayPortalSDK-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C41D15821DE3ECD004C2254 /* PPSDK-SwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PPSDK-SwiftExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C41D15B21DE3ECD004C2254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C41D16021DE3ECD004C2254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C41D16221DE3ECF004C2254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -27,9 +30,15 @@
 		1C41D16D21DE4091004C2254 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		1C41D16F21DE681D004C2254 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1C41D17121DE6827004C2254 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1CB9A30321F0D5C8001F1AF3 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		1CBFA8A421F0D88E00295869 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		1CBFA8A721F0E46600295869 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		237DA17C5F469E7276045D69 /* Pods_PlayPortalSDK_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayPortalSDK_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E4B5A78001AD0E0C2FFDD3C /* Pods-PPSDK-SwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPSDK-SwiftExample.debug.xcconfig"; path = "Target Support Files/Pods-PPSDK-SwiftExample/Pods-PPSDK-SwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
 		45C70F67EF873DC54772C467 /* Pods-PlayPortalSDK-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayPortalSDK-Swift.release.xcconfig"; path = "Target Support Files/Pods-PlayPortalSDK-Swift/Pods-PlayPortalSDK-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		5BDE5C2BD3A834234EACD935 /* Pods-PPSDK-SwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPSDK-SwiftExample.release.xcconfig"; path = "Target Support Files/Pods-PPSDK-SwiftExample/Pods-PPSDK-SwiftExample.release.xcconfig"; sourceTree = "<group>"; };
 		8CC986EC01E0194887BFD6C4 /* Pods-PlayPortalSDK-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayPortalSDK-Swift.debug.xcconfig"; path = "Target Support Files/Pods-PlayPortalSDK-Swift/Pods-PlayPortalSDK-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		C11905D8C32D292C2D132044 /* Pods_PPSDK_SwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PPSDK_SwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D428223467980BBDF7875687 /* Pods_PlayPortalSDK_Swift.framework in Frameworks */,
+				9AEF9027ACB6542A77B81F13 /* Pods_PPSDK_SwiftExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +66,7 @@
 		1C41D15921DE3ECD004C2254 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1C41D15821DE3ECD004C2254 /* PlayPortalSDK-Swift.app */,
+				1C41D15821DE3ECD004C2254 /* PPSDK-SwiftExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +82,9 @@
 				1C41D16D21DE4091004C2254 /* Config.swift */,
 				1C41D16F21DE681D004C2254 /* ProfileViewController.swift */,
 				1C41D17121DE6827004C2254 /* LoginViewController.swift */,
+				1CB9A30321F0D5C8001F1AF3 /* FriendViewController.swift */,
+				1CBFA8A421F0D88E00295869 /* FriendTableViewCell.swift */,
+				1CBFA8A721F0E46600295869 /* DataViewController.swift */,
 			);
 			path = "PPSDK-SwiftExample";
 			sourceTree = "<group>";
@@ -81,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				237DA17C5F469E7276045D69 /* Pods_PlayPortalSDK_Swift.framework */,
+				C11905D8C32D292C2D132044 /* Pods_PPSDK_SwiftExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -90,6 +103,8 @@
 			children = (
 				8CC986EC01E0194887BFD6C4 /* Pods-PlayPortalSDK-Swift.debug.xcconfig */,
 				45C70F67EF873DC54772C467 /* Pods-PlayPortalSDK-Swift.release.xcconfig */,
+				2E4B5A78001AD0E0C2FFDD3C /* Pods-PPSDK-SwiftExample.debug.xcconfig */,
+				5BDE5C2BD3A834234EACD935 /* Pods-PPSDK-SwiftExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -97,9 +112,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1C41D15721DE3ECD004C2254 /* PlayPortalSDK-Swift */ = {
+		1C41D15721DE3ECD004C2254 /* PPSDK-SwiftExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C41D16A21DE3ECF004C2254 /* Build configuration list for PBXNativeTarget "PlayPortalSDK-Swift" */;
+			buildConfigurationList = 1C41D16A21DE3ECF004C2254 /* Build configuration list for PBXNativeTarget "PPSDK-SwiftExample" */;
 			buildPhases = (
 				98576FC390CD169EDCB86104 /* [CP] Check Pods Manifest.lock */,
 				1C41D15421DE3ECD004C2254 /* Sources */,
@@ -111,9 +126,9 @@
 			);
 			dependencies = (
 			);
-			name = "PlayPortalSDK-Swift";
+			name = "PPSDK-SwiftExample";
 			productName = "PlayPortalSDK-Swift";
-			productReference = 1C41D15821DE3ECD004C2254 /* PlayPortalSDK-Swift.app */;
+			productReference = 1C41D15821DE3ECD004C2254 /* PPSDK-SwiftExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +159,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1C41D15721DE3ECD004C2254 /* PlayPortalSDK-Swift */,
+				1C41D15721DE3ECD004C2254 /* PPSDK-SwiftExample */,
 			);
 		};
 /* End PBXProject section */
@@ -171,7 +186,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PlayPortalSDK-Swift/Pods-PlayPortalSDK-Swift-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PPSDK-SwiftExample/Pods-PPSDK-SwiftExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/PPSDK-Swift/PPSDK_Swift.framework",
@@ -186,7 +201,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayPortalSDK-Swift/Pods-PlayPortalSDK-Swift-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PPSDK-SwiftExample/Pods-PPSDK-SwiftExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		98576FC390CD169EDCB86104 /* [CP] Check Pods Manifest.lock */ = {
@@ -204,7 +219,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PlayPortalSDK-Swift-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PPSDK-SwiftExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -219,9 +234,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C41D17221DE6827004C2254 /* LoginViewController.swift in Sources */,
+				1CBFA8A821F0E46600295869 /* DataViewController.swift in Sources */,
 				1C41D17021DE681D004C2254 /* ProfileViewController.swift in Sources */,
 				1C41D15C21DE3ECD004C2254 /* AppDelegate.swift in Sources */,
+				1CBFA8A521F0D88E00295869 /* FriendTableViewCell.swift in Sources */,
 				1C41D16E21DE4091004C2254 /* Config.swift in Sources */,
+				1CB9A30421F0D5C8001F1AF3 /* FriendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +383,7 @@
 		};
 		1C41D16B21DE3ECF004C2254 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CC986EC01E0194887BFD6C4 /* Pods-PlayPortalSDK-Swift.debug.xcconfig */;
+			baseConfigurationReference = 2E4B5A78001AD0E0C2FFDD3C /* Pods-PPSDK-SwiftExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,7 +402,7 @@
 		};
 		1C41D16C21DE3ECF004C2254 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45C70F67EF873DC54772C467 /* Pods-PlayPortalSDK-Swift.release.xcconfig */;
+			baseConfigurationReference = 5BDE5C2BD3A834234EACD935 /* Pods-PPSDK-SwiftExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -413,7 +431,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1C41D16A21DE3ECF004C2254 /* Build configuration list for PBXNativeTarget "PlayPortalSDK-Swift" */ = {
+		1C41D16A21DE3ECF004C2254 /* Build configuration list for PBXNativeTarget "PPSDK-SwiftExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1C41D16B21DE3ECF004C2254 /* Debug */,

@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayPortalSDK_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PPSDK_SwiftExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,16 +34,110 @@
                     </tabBar>
                     <connections>
                         <segue destination="rq7-9P-PXm" kind="relationship" relationship="viewControllers" id="egQ-QT-Bjp"/>
+                        <segue destination="gEY-0c-Gwo" kind="relationship" relationship="viewControllers" id="Hae-OM-Mqm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jGE-AF-khk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1756" y="134"/>
         </scene>
+        <!--Friend-->
+        <scene sceneID="hld-vp-Ub0">
+            <objects>
+                <viewController restorationIdentifier="friend" storyboardIdentifier="friend" id="gEY-0c-Gwo" customClass="FriendViewController" customModule="PPSDK_SwiftExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="14H-ZG-Gm5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="w5z-rR-hTG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0Y-BT-O7Y">
+                                <rect key="frame" x="0.0" y="76" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="61o-xJ-f1Q"/>
+                                </constraints>
+                                <state key="normal" title="Search Random Users"/>
+                                <connections>
+                                    <action selector="searchRandomUsersTapped:" destination="gEY-0c-Gwo" eventType="touchUpInside" id="tQ7-85-P8c"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jl4-An-wca">
+                                <rect key="frame" x="0.0" y="120" width="375" height="498"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="friendTableViewCell" id="vYy-CA-Sd9" customClass="FriendTableViewCell" customModule="PPSDK_SwiftExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vYy-CA-Sd9" id="LJD-BD-I5g">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Fq-im-oGQ">
+                                                    <rect key="frame" x="8" y="0.0" width="44" height="44.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="fL5-1D-Gz6"/>
+                                                        <constraint firstAttribute="width" constant="44" id="pJv-Hk-BO7"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8B-Tc-PZW">
+                                                    <rect key="frame" x="68" y="0.0" width="307" height="44.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="1ZL-ke-9kD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="e8B-Tc-PZW" firstAttribute="top" secondItem="LJD-BD-I5g" secondAttribute="top" id="81c-2Q-kAM"/>
+                                                <constraint firstAttribute="bottom" secondItem="2Fq-im-oGQ" secondAttribute="bottom" id="DiH-z4-Cso"/>
+                                                <constraint firstAttribute="trailing" secondItem="e8B-Tc-PZW" secondAttribute="trailing" id="HHe-3q-rvF"/>
+                                                <constraint firstItem="e8B-Tc-PZW" firstAttribute="leading" secondItem="2Fq-im-oGQ" secondAttribute="trailing" constant="16" id="M2G-ER-QFb"/>
+                                                <constraint firstItem="2Fq-im-oGQ" firstAttribute="top" secondItem="LJD-BD-I5g" secondAttribute="top" id="SDb-aP-paI"/>
+                                                <constraint firstItem="2Fq-im-oGQ" firstAttribute="leading" secondItem="LJD-BD-I5g" secondAttribute="leading" constant="8" id="n3y-57-mcK"/>
+                                                <constraint firstAttribute="bottom" secondItem="e8B-Tc-PZW" secondAttribute="bottom" id="q8Q-cR-lhQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="handleLabel" destination="e8B-Tc-PZW" id="jhJ-rG-InB"/>
+                                            <outlet property="profilePicImageView" destination="2Fq-im-oGQ" id="T7t-K9-7om"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a2m-Ce-QER" firstAttribute="trailing" secondItem="Jl4-An-wca" secondAttribute="trailing" id="0BD-Do-aZd"/>
+                            <constraint firstItem="w5z-rR-hTG" firstAttribute="top" secondItem="a2m-Ce-QER" secondAttribute="top" id="7Qj-t2-YqY"/>
+                            <constraint firstItem="T0Y-BT-O7Y" firstAttribute="bottom" secondItem="Jl4-An-wca" secondAttribute="top" id="DSZ-y2-2tC"/>
+                            <constraint firstItem="T0Y-BT-O7Y" firstAttribute="leading" secondItem="a2m-Ce-QER" secondAttribute="leading" id="IK2-QO-5ex"/>
+                            <constraint firstItem="Jl4-An-wca" firstAttribute="leading" secondItem="a2m-Ce-QER" secondAttribute="leading" id="LVb-Am-5Br"/>
+                            <constraint firstItem="T0Y-BT-O7Y" firstAttribute="top" secondItem="w5z-rR-hTG" secondAttribute="bottom" id="PCH-7t-Fau"/>
+                            <constraint firstItem="w5z-rR-hTG" firstAttribute="leading" secondItem="a2m-Ce-QER" secondAttribute="leading" id="QEs-H7-16C"/>
+                            <constraint firstItem="a2m-Ce-QER" firstAttribute="bottom" secondItem="Jl4-An-wca" secondAttribute="bottom" id="gok-px-wnn"/>
+                            <constraint firstItem="a2m-Ce-QER" firstAttribute="trailing" secondItem="T0Y-BT-O7Y" secondAttribute="trailing" id="jPD-vU-qi2"/>
+                            <constraint firstItem="a2m-Ce-QER" firstAttribute="trailing" secondItem="w5z-rR-hTG" secondAttribute="trailing" id="sM2-zf-KK1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a2m-Ce-QER"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Friend" id="3ia-lJ-wCx"/>
+                    <connections>
+                        <outlet property="searchBar" destination="w5z-rR-hTG" id="1wZ-TF-dCn"/>
+                        <outlet property="tableView" destination="Jl4-An-wca" id="hip-bb-pyi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ib-gV-EpN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2550" y="134"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="dzV-Sv-h6y">
             <objects>
-                <viewController restorationIdentifier="login" storyboardIdentifier="login" id="3Ca-Xa-FWg" customClass="LoginViewController" customModule="PlayPortalSDK_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="login" storyboardIdentifier="login" id="3Ca-Xa-FWg" customClass="LoginViewController" customModule="PPSDK_SwiftExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qTs-8f-cvx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +167,7 @@
         <!--Profile-->
         <scene sceneID="X5r-ge-EzZ">
             <objects>
-                <viewController restorationIdentifier="profile" storyboardIdentifier="profile" id="rq7-9P-PXm" customClass="ProfileViewController" customModule="PlayPortalSDK_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="profile" storyboardIdentifier="profile" id="rq7-9P-PXm" customClass="ProfileViewController" customModule="PPSDK_SwiftExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pry-We-yEw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  PlayPortalSDK-Swift
+//  PPSDK-SwiftExample
 //
 //  Created by Lincoln Fraley on 1/3/19.
 //  Copyright © 2019 Lincoln Fraley. All rights reserved.
@@ -36,6 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PlayPortalLoginDelegate {
                 profile.userProfile = userProfile
                 strongSelf.window?.rootViewController = tab
                 
+                //  Register for push notifications
                 PlayPortalNotifications.shared.register { error in
                     if let error = error {
                         print("error requesting notifications")
@@ -76,6 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PlayPortalLoginDelegate {
         authenticate()
     }
     
+    //  This method must be implemented so the sdk can register a device token after the user authorizes push notifications
     func application(
         _ application: UIApplication,
         didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
