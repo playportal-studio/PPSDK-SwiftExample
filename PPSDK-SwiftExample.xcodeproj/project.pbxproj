@@ -47,7 +47,7 @@
 		1C41D14F21DE3ECD004C2254 = {
 			isa = PBXGroup;
 			children = (
-				1C41D15A21DE3ECD004C2254 /* PlayPortalSDK-Swift */,
+				1C41D15A21DE3ECD004C2254 /* PPSDK-SwiftExample */,
 				1C41D15921DE3ECD004C2254 /* Products */,
 				5EE05E8916F1669719948C5C /* Pods */,
 				4C09E8542E2D1F0F3E7217D5 /* Frameworks */,
@@ -62,7 +62,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1C41D15A21DE3ECD004C2254 /* PlayPortalSDK-Swift */ = {
+		1C41D15A21DE3ECD004C2254 /* PPSDK-SwiftExample */ = {
 			isa = PBXGroup;
 			children = (
 				1C41D15B21DE3ECD004C2254 /* AppDelegate.swift */,
@@ -74,7 +74,7 @@
 				1C41D16F21DE681D004C2254 /* ProfileViewController.swift */,
 				1C41D17121DE6827004C2254 /* LoginViewController.swift */,
 			);
-			path = "PlayPortalSDK-Swift";
+			path = "PPSDK-SwiftExample";
 			sourceTree = "<group>";
 		};
 		4C09E8542E2D1F0F3E7217D5 /* Frameworks */ = {
@@ -370,12 +370,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SA5YU43KDL;
-				INFOPLIST_FILE = "PlayPortalSDK-Swift/Info.plist";
+				INFOPLIST_FILE = "PPSDK-SwiftExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "lincoln.fraley93.PlayPortalSDK-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "lincoln.fraley93.PPSDK-SwiftExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,12 +389,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SA5YU43KDL;
-				INFOPLIST_FILE = "PlayPortalSDK-Swift/Info.plist";
+				INFOPLIST_FILE = "PPSDK-SwiftExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "lincoln.fraley93.PlayPortalSDK-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "lincoln.fraley93.PPSDK-SwiftExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
