@@ -35,6 +35,7 @@
                     <connections>
                         <segue destination="rq7-9P-PXm" kind="relationship" relationship="viewControllers" id="egQ-QT-Bjp"/>
                         <segue destination="gEY-0c-Gwo" kind="relationship" relationship="viewControllers" id="Hae-OM-Mqm"/>
+                        <segue destination="rrg-Vj-TKs" kind="relationship" relationship="viewControllers" id="muV-3y-7Iz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jGE-AF-khk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -133,6 +134,237 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ib-gV-EpN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2550" y="134"/>
+        </scene>
+        <!--Data-->
+        <scene sceneID="Tod-Or-hV0">
+            <objects>
+                <viewController restorationIdentifier="data" storyboardIdentifier="data" id="rrg-Vj-TKs" customClass="DataViewController" customModule="PPSDK_SwiftExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gmg-r4-eBS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Bucket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOC-bl-tce">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1CR-ZV-xbB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="k5r-nl-aHX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Create bucket named" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0r3-xW-rpC">
+                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkf-7V-k3p">
+                                        <rect key="frame" x="206.5" y="0.0" width="168.5" height="30"/>
+                                        <state key="normal" title="Create"/>
+                                        <connections>
+                                            <action selector="createBucketTapped:" destination="rrg-Vj-TKs" eventType="touchUpInside" id="cSE-Fg-Ymi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read from Bucket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6y-xm-ZQv">
+                                <rect key="frame" x="0.0" y="94" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="PDp-r5-Cqt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Read from bucket named" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vvD-xh-D4d">
+                                <rect key="frame" x="0.0" y="138" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="At key in bucket" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1y-Oh-NxP">
+                                <rect key="frame" x="0.0" y="168" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICe-Du-hWj">
+                                <rect key="frame" x="0.0" y="197" width="375" height="30"/>
+                                <state key="normal" title="Read"/>
+                                <connections>
+                                    <action selector="readFromBucketTapped:" destination="rrg-Vj-TKs" eventType="touchUpInside" id="5EI-HA-Gbm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value in bucket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5u-mT-gU1">
+                                <rect key="frame" x="0.0" y="227" width="375" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write to Bucket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGB-wi-Qpr">
+                                <rect key="frame" x="0.0" y="245" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write value to bucket named" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pmj-Pj-M9l">
+                                <rect key="frame" x="0.0" y="265.5" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="At key in bucket" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bh6-mn-QRG">
+                                <rect key="frame" x="0.0" y="295.5" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="With value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTS-Pu-cQY">
+                                <rect key="frame" x="0.0" y="325.5" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Dh-Ay-F13">
+                                <rect key="frame" x="0.0" y="355.5" width="375" height="30"/>
+                                <state key="normal" title="Write"/>
+                                <connections>
+                                    <action selector="writeToBucketTapped:" destination="rrg-Vj-TKs" eventType="touchUpInside" id="x0L-uX-NhO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete key from Bucket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSA-BT-uGj">
+                                <rect key="frame" x="0.0" y="385.5" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6jJ-MQ-7ed"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Delete from bucket named" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J47-dx-Tap">
+                                <rect key="frame" x="0.0" y="415.5" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="For key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8iZ-RZ-w5d">
+                                <rect key="frame" x="0.0" y="445.5" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqY-cB-ijg">
+                                <rect key="frame" x="0.0" y="475.5" width="375" height="30"/>
+                                <state key="normal" title="Delete key"/>
+                                <connections>
+                                    <action selector="deleteKeyInBucketTapped:" destination="rrg-Vj-TKs" eventType="touchUpInside" id="zT5-5S-Gzh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete Bucket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5A-f4-aa3">
+                                <rect key="frame" x="0.0" y="505.5" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="RsB-41-vm2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Delete bucket named" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VOh-T6-rtr">
+                                <rect key="frame" x="0.0" y="549.5" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhr-Ay-dUo">
+                                <rect key="frame" x="0.0" y="579.5" width="375" height="30"/>
+                                <state key="normal" title="Delete bucket"/>
+                                <connections>
+                                    <action selector="deleteBucketTapped:" destination="rrg-Vj-TKs" eventType="touchUpInside" id="UlV-KM-WZe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J47-dx-Tap" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="0gT-KW-tFI"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="Q5u-mT-gU1" secondAttribute="trailing" id="1Zo-SI-Qew"/>
+                            <constraint firstItem="Q5u-mT-gU1" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="1ar-FR-SSr"/>
+                            <constraint firstItem="kSA-BT-uGj" firstAttribute="bottom" secondItem="J47-dx-Tap" secondAttribute="top" id="4Cn-zO-k9d"/>
+                            <constraint firstItem="ICe-Du-hWj" firstAttribute="top" secondItem="o1y-Oh-NxP" secondAttribute="bottom" constant="-1" id="58o-DP-zLA"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="1Dh-Ay-F13" secondAttribute="trailing" id="8Ig-bt-kox"/>
+                            <constraint firstItem="kSA-BT-uGj" firstAttribute="top" secondItem="1Dh-Ay-F13" secondAttribute="bottom" id="8jk-CM-xgl"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="J47-dx-Tap" secondAttribute="trailing" id="9Ec-du-lm5"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="8iZ-RZ-w5d" secondAttribute="trailing" id="AlO-iW-3QM"/>
+                            <constraint firstItem="r5A-f4-aa3" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="Bev-n3-oPK"/>
+                            <constraint firstItem="Pmj-Pj-M9l" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="Bri-xv-Quf"/>
+                            <constraint firstItem="Bh6-mn-QRG" firstAttribute="top" secondItem="Pmj-Pj-M9l" secondAttribute="bottom" id="CGB-ak-kKI"/>
+                            <constraint firstItem="Jhr-Ay-dUo" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="DGI-Vf-ZuE"/>
+                            <constraint firstItem="8iZ-RZ-w5d" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="EZm-jC-HOf"/>
+                            <constraint firstItem="TTS-Pu-cQY" firstAttribute="top" secondItem="Bh6-mn-QRG" secondAttribute="bottom" id="FaJ-jI-8RK"/>
+                            <constraint firstItem="8iZ-RZ-w5d" firstAttribute="top" secondItem="J47-dx-Tap" secondAttribute="bottom" id="IQ8-aE-AgX"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="TTS-Pu-cQY" secondAttribute="trailing" id="J32-Zs-bbb"/>
+                            <constraint firstItem="1Dh-Ay-F13" firstAttribute="top" secondItem="TTS-Pu-cQY" secondAttribute="bottom" id="MMN-8c-OWa"/>
+                            <constraint firstItem="o1y-Oh-NxP" firstAttribute="top" secondItem="vvD-xh-D4d" secondAttribute="bottom" id="Mho-ys-EgC"/>
+                            <constraint firstItem="Jhr-Ay-dUo" firstAttribute="top" secondItem="VOh-T6-rtr" secondAttribute="bottom" id="Nt1-GQ-Xbs"/>
+                            <constraint firstItem="vqY-cB-ijg" firstAttribute="top" secondItem="8iZ-RZ-w5d" secondAttribute="bottom" id="Ol4-02-Ddb"/>
+                            <constraint firstItem="k5r-nl-aHX" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="Pcv-rk-00k"/>
+                            <constraint firstItem="kSA-BT-uGj" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="RxW-UT-om9"/>
+                            <constraint firstItem="ICe-Du-hWj" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="T6W-lQ-eyx"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="lOC-bl-tce" secondAttribute="trailing" id="TDa-gV-OI0"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="e6y-xm-ZQv" secondAttribute="trailing" id="UiY-vR-TEk"/>
+                            <constraint firstItem="Q5u-mT-gU1" firstAttribute="top" secondItem="ICe-Du-hWj" secondAttribute="bottom" id="VR5-vw-LsH"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="fGB-wi-Qpr" secondAttribute="trailing" id="aCv-xU-0eO"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="ICe-Du-hWj" secondAttribute="trailing" id="drM-66-eaC"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="vvD-xh-D4d" secondAttribute="trailing" id="eQ2-mI-MCj"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="r5A-f4-aa3" secondAttribute="trailing" id="ezR-PL-pJL"/>
+                            <constraint firstItem="e6y-xm-ZQv" firstAttribute="top" secondItem="k5r-nl-aHX" secondAttribute="bottom" id="fju-Gm-mbK"/>
+                            <constraint firstItem="vvD-xh-D4d" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="gHd-4K-POX"/>
+                            <constraint firstItem="e6y-xm-ZQv" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="heq-Ex-Ve2"/>
+                            <constraint firstItem="r5A-f4-aa3" firstAttribute="top" secondItem="vqY-cB-ijg" secondAttribute="bottom" id="iCu-Cw-Jdt"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="Jhr-Ay-dUo" secondAttribute="trailing" id="iu6-zw-wlh"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="o1y-Oh-NxP" secondAttribute="trailing" id="lpC-Pq-JCZ"/>
+                            <constraint firstItem="1Dh-Ay-F13" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="mOe-xz-BAD"/>
+                            <constraint firstItem="o1y-Oh-NxP" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="niG-nH-TZu"/>
+                            <constraint firstItem="e6y-xm-ZQv" firstAttribute="bottom" secondItem="vvD-xh-D4d" secondAttribute="top" id="oe4-CE-xae"/>
+                            <constraint firstItem="r5A-f4-aa3" firstAttribute="bottom" secondItem="VOh-T6-rtr" secondAttribute="top" id="ovF-dr-aMW"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="kSA-BT-uGj" secondAttribute="trailing" id="qAX-ea-BU1"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="VOh-T6-rtr" secondAttribute="trailing" id="qZ1-mu-pfp"/>
+                            <constraint firstItem="lOC-bl-tce" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="qii-Si-uVv"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="vqY-cB-ijg" secondAttribute="trailing" id="qls-9J-UdN"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="k5r-nl-aHX" secondAttribute="trailing" id="qoB-4J-tWG"/>
+                            <constraint firstItem="Bh6-mn-QRG" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="qpX-HC-uiH"/>
+                            <constraint firstItem="fGB-wi-Qpr" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="rx4-kr-R2D"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="Pmj-Pj-M9l" secondAttribute="trailing" id="t30-Nc-O4c"/>
+                            <constraint firstItem="fGB-wi-Qpr" firstAttribute="bottom" secondItem="Pmj-Pj-M9l" secondAttribute="top" id="tVK-Zw-9Qc"/>
+                            <constraint firstItem="lOC-bl-tce" firstAttribute="bottom" secondItem="k5r-nl-aHX" secondAttribute="top" id="uUV-KM-sBZ"/>
+                            <constraint firstItem="VOh-T6-rtr" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="vB6-De-aNf"/>
+                            <constraint firstItem="fGB-wi-Qpr" firstAttribute="top" secondItem="Q5u-mT-gU1" secondAttribute="bottom" id="vSq-1Q-jis"/>
+                            <constraint firstItem="lOC-bl-tce" firstAttribute="top" secondItem="Dr2-dE-gai" secondAttribute="top" id="w2g-1E-kae"/>
+                            <constraint firstItem="Dr2-dE-gai" firstAttribute="trailing" secondItem="Bh6-mn-QRG" secondAttribute="trailing" id="wqB-PN-web"/>
+                            <constraint firstItem="TTS-Pu-cQY" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="ypW-29-CTE"/>
+                            <constraint firstItem="vqY-cB-ijg" firstAttribute="leading" secondItem="Dr2-dE-gai" secondAttribute="leading" id="z4b-Aw-zt7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dr2-dE-gai"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Data" id="i3H-YR-QOP"/>
+                    <connections>
+                        <outlet property="createBucketTextField" destination="0r3-xW-rpC" id="pj1-tJ-dRD"/>
+                        <outlet property="deleteBucketNameTextField" destination="VOh-T6-rtr" id="VZg-cX-SNA"/>
+                        <outlet property="deleteKeyBucketNameTextField" destination="J47-dx-Tap" id="WFT-4x-ygJ"/>
+                        <outlet property="deleteKeyTextField" destination="8iZ-RZ-w5d" id="Ifp-sV-wdh"/>
+                        <outlet property="readBucketNameTextField" destination="vvD-xh-D4d" id="dfw-F1-B4F"/>
+                        <outlet property="readKeyTextField" destination="o1y-Oh-NxP" id="4cp-UK-e6X"/>
+                        <outlet property="valueAtKeyLabel" destination="Q5u-mT-gU1" id="56j-vi-vAJ"/>
+                        <outlet property="writeBucketNameTextField" destination="Pmj-Pj-M9l" id="mMq-cQ-hba"/>
+                        <outlet property="writeKeyTextField" destination="Bh6-mn-QRG" id="qCa-aI-aZn"/>
+                        <outlet property="writeValueTextField" destination="TTS-Pu-cQY" id="tcZ-Oa-pJR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNn-bp-qFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3210" y="133"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="dzV-Sv-h6y">

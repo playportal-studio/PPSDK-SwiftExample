@@ -2,4 +2,102 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../PPSDK-Swift/Source/RequestHandler.swift"
+            timestampString = "569519283.24195"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "request(_:at:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../PPSDK-Swift/Source/RequestHandler.swift"
+            timestampString = "569519283.242021"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "_request(_:at:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.NSHTTPURLResponse&gt;, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in PPSDK_Swift.RequestHandler.(_request in _549F1C7C972F438E11A2E4C2B65E4960)(_: PPSDK_Swift.URLRequestConvertible, at: Swift.Optional&lt;Swift.String&gt;, _: Swift.Optional&lt;(Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;Any&gt;) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "PPSDK_Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lincolnfraley/Developer/dynepic/PPSDK-Swift/Source/RequestHandler.swift"
+                  timestampString = "569517460.473876"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.NSHTTPURLResponse) -&gt; Swift.Optional&lt;PPSDK_Swift.PlayPortalError.API&gt; in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.NSHTTPURLResponse&gt;, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in PPSDK_Swift.RequestHandler.(_request in _549F1C7C972F438E11A2E4C2B65E4960)(_: PPSDK_Swift.URLRequestConvertible, at: Swift.Optional&lt;Swift.String&gt;, _: Swift.Optional&lt;(Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;Any&gt;) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "PPSDK_Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lincolnfraley/Developer/dynepic/PPSDK-Swift/Source/RequestHandler.swift"
+                  timestampString = "569517460.476457"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../PPSDK-Swift/Source/RequestHandler.swift"
+            timestampString = "569519283.242075"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "_request(_:at:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../PPSDK-Swift/Source/RequestHandler.swift"
+            timestampString = "569519283.2421269"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "_request(_:at:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

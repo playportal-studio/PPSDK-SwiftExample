@@ -24,6 +24,8 @@ class FriendViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.separatorStyle = .none
         
         searchBar.delegate = self
+        searchBar.autocapitalizationType = .none
+        searchBar.autocorrectionType = .no
         
         loadFriendProfiles()
     }
