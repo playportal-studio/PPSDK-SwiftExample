@@ -37,6 +37,7 @@ class LeaderboardViewController: UIViewController, UITableViewDataSource, UITabl
         if let c = addCategoriesTextField.text?.split(separator: ",").map(String.init) {
             categories = c
         }
+        print(categories)
         PlayPortalLeaderboard.shared.updateLeaderboard(score, forCategories: categories) { [weak self] error, _ in
             guard let self = self else { return }
             if let error = error {

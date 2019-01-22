@@ -29,11 +29,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PlayPortalLoginDelegate {
                 print("User authenticated successfully")
                 guard let tab = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tab") as? UITabBarController
                     , let controllers = tab.viewControllers
-                    , let profile = controllers[0] as? ProfileViewController
                     else {
-                        return
+                        fatalError("Could not instantiate tab bar.")
                 }
+                
+                guard let profile = controllers[0] as? ProfileViewController else {
+                    fatalError("Expected ProfileViewController at tab 0.")
+                }
+                
+                guard let notification = controllers[5] as? NotificationViewController else {
+                    fatalError("Expected NotificationViewController at tab 5.")
+                }
+                
                 profile.userProfile = userProfile
+                notification.userProfile = userProfile 
                 strongSelf.window?.rootViewController = tab
                 
                 //  Register for push notifications
