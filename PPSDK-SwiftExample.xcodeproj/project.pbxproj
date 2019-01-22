@@ -16,6 +16,8 @@
 		1C41D16E21DE4091004C2254 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C41D16D21DE4091004C2254 /* Config.swift */; };
 		1C41D17021DE681D004C2254 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C41D16F21DE681D004C2254 /* ProfileViewController.swift */; };
 		1C41D17221DE6827004C2254 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C41D17121DE6827004C2254 /* LoginViewController.swift */; };
+		1C5FE76721F664060021FE84 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5FE76621F664060021FE84 /* LeaderboardViewController.swift */; };
+		1C5FE76921F666E00021FE84 /* LeaderboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5FE76821F666E00021FE84 /* LeaderboardTableViewCell.swift */; };
 		1CB9A30421F0D5C8001F1AF3 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9A30321F0D5C8001F1AF3 /* FriendViewController.swift */; };
 		1CBFA8A521F0D88E00295869 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBFA8A421F0D88E00295869 /* FriendTableViewCell.swift */; };
 		1CBFA8A821F0E46600295869 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBFA8A721F0E46600295869 /* DataViewController.swift */; };
@@ -34,6 +36,8 @@
 		1C41D16D21DE4091004C2254 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		1C41D16F21DE681D004C2254 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1C41D17121DE6827004C2254 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1C5FE76621F664060021FE84 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		1C5FE76821F666E00021FE84 /* LeaderboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewCell.swift; sourceTree = "<group>"; };
 		1CB9A30321F0D5C8001F1AF3 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		1CBFA8A421F0D88E00295869 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		1CBFA8A721F0E46600295869 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				1CBFA8A721F0E46600295869 /* DataViewController.swift */,
 				1C1DFFC621F2310E00577B34 /* CollectionViewController.swift */,
 				1C1DFFC821F2348800577B34 /* CollectionTableViewCell.swift */,
+				1C5FE76621F664060021FE84 /* LeaderboardViewController.swift */,
+				1C5FE76821F666E00021FE84 /* LeaderboardTableViewCell.swift */,
 			);
 			path = "PPSDK-SwiftExample";
 			sourceTree = "<group>";
@@ -241,7 +247,9 @@
 			files = (
 				1C41D17221DE6827004C2254 /* LoginViewController.swift in Sources */,
 				1CBFA8A821F0E46600295869 /* DataViewController.swift in Sources */,
+				1C5FE76721F664060021FE84 /* LeaderboardViewController.swift in Sources */,
 				1C41D17021DE681D004C2254 /* ProfileViewController.swift in Sources */,
+				1C5FE76921F666E00021FE84 /* LeaderboardTableViewCell.swift in Sources */,
 				1C41D15C21DE3ECD004C2254 /* AppDelegate.swift in Sources */,
 				1C1DFFC721F2310E00577B34 /* CollectionViewController.swift in Sources */,
 				1CBFA8A521F0D88E00295869 /* FriendTableViewCell.swift in Sources */,
